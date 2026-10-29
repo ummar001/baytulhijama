@@ -39,19 +39,18 @@
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
     .header-inner {
-      max-width: 1200px; margin: 0 auto; padding: 0.9rem 1.5rem;
+      max-width: 1200px; margin: 0 auto; padding: 0.75rem 1.5rem;
       display: flex; align-items: center; justify-content: space-between;
     }
-    .logo {
-      display: flex; align-items: center; gap: 0.75rem;
-      font-weight: 800; font-size: 1.25rem; letter-spacing: -0.02em;
-    }
-    .logo span { color: var(--primary); }
-    .logo-icon {
-      width: 42px; height: 42px; background: var(--primary);
-      border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem; font-weight: 700;
-    }
+ .logo img {
+  height: 52px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  border-radius: 12px;        /* soft rounded corners */
+  background: white;
+  padding: 6px 10px;
+}
     nav { display: flex; gap: 1.8rem; align-items: center; }
     nav a {
       font-size: 0.95rem; font-weight: 500; color: var(--text-muted);
@@ -239,7 +238,16 @@
       justify-content: space-between; gap: 2rem; margin-bottom: 2rem;
     }
     .footer-brand { max-width: 280px; }
-    .footer-brand .logo { margin-bottom: 1rem; }
+   .footer-brand .logo img {
+  height: 46px;
+  width: auto;
+  max-width: 130px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: white;
+  padding: 5px 8px;
+  margin-bottom: 1rem;
+}
     .footer-brand p { color: var(--text-muted); font-size: 0.9rem; }
     .footer-links h4 { font-size: 0.95rem; margin-bottom: 1rem; color: white; }
     .footer-links a {
@@ -267,6 +275,7 @@
       .hero p { margin-left: auto; margin-right: auto; }
       .hero-buttons { justify-content: center; }
       .hero-meta { justify-content: center; }
+      .logo img { height: 42px; }
     }
   </style>
 </head>
@@ -276,8 +285,7 @@
   <header>
     <div class="header-inner">
       <a href="#home" class="logo">
-        <div class="logo-icon">BH</div>
-        Baytul<span>Hijama</span>
+        <img src="images/logo.jpg" alt="Baytul Hijama">
       </a>
       <nav id="nav">
         <a href="#services">Services</a>
@@ -392,10 +400,10 @@
           <img src="images/cupping3.jpeg" alt="Cupping therapy on back and shoulder" loading="lazy">
         </div>
         <div class="gallery-item">
-          <img src="images/cupping4 .jpeg" alt="Full back wet cupping treatment" loading="lazy">
+          <img src="images/cupping4.jpeg" alt="Full back wet cupping treatment" loading="lazy">
         </div>
         <div class="gallery-item">
-          <img src="images/cupping5 .jpeg" alt="Extensive cupping marks after treatment" loading="lazy">
+          <img src="images/cupping5.jpeg" alt="Extensive cupping marks after treatment" loading="lazy">
         </div>
         <div class="gallery-item">
           <img src="images/cupping6.jpeg" alt="Client after Hijama session" loading="lazy">
@@ -519,8 +527,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="#home" class="logo">
-          <div class="logo-icon">BH</div>
-          Baytul<span>Hijama</span>
+          <img src="images/logo.jpg" alt="Baytul Hijama">
         </a>
         <p>Professional Hijama, Massage & Acupuncture therapies in Oldham. CMA Registered • IPHM.</p>
       </div>
